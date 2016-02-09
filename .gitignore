@@ -1,3 +1,7 @@
+#Build and Idea files
 .idea
 target
 Scalterra.iml
+
+#temporary game files
+saves/last-save.scalsave
