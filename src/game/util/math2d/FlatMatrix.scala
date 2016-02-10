@@ -8,7 +8,7 @@ class FlatMatrix[T: ClassTag](val width: Int, val height: Int, passedData: Optio
   val size = width * height
 
   val data: Array[T] = passedData.getOrElse(new Array[T](width*height))
-  if(data.length != size) throw new IllegalArgumentException("Data size must be equal to width*height")
+  require(data.length == size, "Data size must be equal to width*height")
 
   def translateIndex(x: Int, y: Int): Int = x*height+y
 
