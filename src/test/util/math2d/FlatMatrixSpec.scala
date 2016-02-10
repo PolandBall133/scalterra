@@ -20,6 +20,20 @@ class FlatMatrixSpec extends FunSpec {
     }
   }
 
+  describe("A FlatMatrix with wrong amount of data passed") {
+    it("should throw when passed not enough data") {
+      intercept[IllegalArgumentException] {
+        new FlatMatrix[Int](2, 2, Some(Array.range(0, 3)))
+      }
+    }
+
+    it("should throw when too much data is being passed") {
+      intercept[IllegalArgumentException] {
+        new FlatMatrix[Int](2, 2, Some(Array.range(0, 5)))
+      }
+    }
+  }
+
   describe("Bound checks") {
     val (width, height) = (5, 5)
     val matrix = new FlatMatrix[Int](width, height)
