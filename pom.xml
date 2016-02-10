@@ -17,6 +17,7 @@
         <natives.version>0.0.6</natives.version>
         <junit.version>4.4</junit.version>
         <scalatest.version>2.2.4</scalatest.version>
+        <json4s-jackson.version>3.3.0</json4s-jackson.version>
     </properties>
 
     <repositories>
@@ -50,6 +51,11 @@
             <version>${scala-pickling.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.json4s</groupId>
+            <artifactId>json4s-jackson_2.11</artifactId>
+            <version>${json4s-jackson.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.lwjgl.lwjgl</groupId>
