@@ -1,4 +1,4 @@
-package util.math2d
+package test.util.math2d
 
 import game.util.math2d.FlatMatrix
 import org.scalatest.FunSpec
@@ -23,13 +23,13 @@ class FlatMatrixSpec extends FunSpec {
   describe("A FlatMatrix with wrong amount of data passed") {
     it("should throw when passed not enough data") {
       intercept[IllegalArgumentException] {
-        new FlatMatrix[Int](2, 2, Some(Array.range(0, 3)))
+        new FlatMatrix[Int](2, 2, Some(1 to 3 toArray))
       }
     }
 
     it("should throw when too much data is being passed") {
       intercept[IllegalArgumentException] {
-        new FlatMatrix[Int](2, 2, Some(Array.range(0, 5)))
+        new FlatMatrix[Int](2, 2, Some(0 to 5 toArray))
       }
     }
   }
@@ -62,7 +62,7 @@ class FlatMatrixSpec extends FunSpec {
   describe("Translation of 2d position to index") {
     val width = 2
     val height = 2
-    val data = Array.range(0, width * height)
+    val data = 0 until width * height toArray
     val matrix = new FlatMatrix[Int](2, 2, Some(data))
 
     it("first element is a valid element"){
