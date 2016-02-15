@@ -8,11 +8,10 @@ import org.newdawn.slick.{AppGameContainer, SlickException}
 
 object Main {
   def main(args: Array[String]) {
-
     try {
-      //val app = new AppGameContainer(new MainGame())
-      //app.setDisplayMode(640, 480, false)
-      //app.start()
+      val app = new AppGameContainer(new MainGame())
+      app.setDisplayMode(640, 480, false)
+      app.start()
 
       val (width, height) = (10, 10)
 
@@ -23,6 +22,5 @@ object Main {
     catch {
       case ex: SlickException => ex.printStackTrace()
     }
-
   }
 }
