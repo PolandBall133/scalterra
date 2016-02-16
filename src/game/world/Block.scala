@@ -1,3 +1,3 @@
 package game.world
 
-class Block(val id: layers.Id) extends AnyVal
+class Block(val id: layers.Id)
