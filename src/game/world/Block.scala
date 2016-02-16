@@ -1,5 +1,3 @@
 package game.world
 
-class Block(val id: Int) extends layers.Element{
-  def uuid = java.util.UUID.randomUUID.toString
-}
+class Block(val id: layers.Id) extends AnyVal
