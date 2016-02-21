@@ -1,36 +1,34 @@
 {
-  "tiles": {
-    "none": {
-      "image_path": "sky.jpg",
-      "is_solid": false
-    },
-    "dirt": {
-      "image_path": "dirt.jpg",
-      "is_solid": true
-    },
-    "grass": {
-      "image_path": "grass.jpg",
-      "is_solid": true
-    },
-    "stone": {
-      "image_path": "stone.jpg",
-      "is_solid": true
-    },
-    "log": {
-      "image_path": "log.jpg",
-      "is_solid": true
-    },
-    "leaves": {
-      "image_path": "leaves.jpg",
-      "is_solid": true
-    },
-    "cloud": {
-      "image_path": "cloud.png",
-      "is_solid": true
-    },
-    "wooden_planks": {
-      "image_path": "wooden_planks.jpg",
-      "is_solid": true
-    }
+  "none": {
+    "image_path": "sky.jpg",
+    "is_solid": false
+  },
+  "dirt": {
+    "image_path": "dirt.jpg",
+    "is_solid": true
+  },
+  "grass": {
+    "image_path": "grass.jpg",
+    "is_solid": true
+  },
+  "stone": {
+    "image_path": "stone.jpg",
+    "is_solid": true
+  },
+  "log": {
+    "image_path": "log.jpg",
+    "is_solid": true
+  },
+  "leaves": {
+    "image_path": "leaves.jpg",
+    "is_solid": true
+  },
+  "cloud": {
+    "image_path": "cloud.png",
+    "is_solid": true
+  },
+  "wooden_planks": {
+    "image_path": "wooden_planks.jpg",
+    "is_solid": true
   }
 }
